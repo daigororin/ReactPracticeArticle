@@ -11,7 +11,7 @@ class Blog extends React.Component {
       <div>
         <Article title = {'HowToUseReact'}/>
         <Article title = {'HowToUseJSX'}/>
-        <Article title = {'HowToUseTS'}/>
+        <Article title = {'HowToUseVSCode'}/>
       </div>
 
     )
