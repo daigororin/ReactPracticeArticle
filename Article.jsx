@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeButton from './LikeButton'
 
 const Article = (props) => {
   let publishState = "";
@@ -7,6 +8,7 @@ const Article = (props) => {
   } else {
     publishState = "NonPublished";
   }
+
   return (
     <div>
       <h2>{props.title}</h2>
@@ -14,6 +16,7 @@ const Article = (props) => {
       <input type="checkbox" checked = {props.isPublished} 
       id = "check" onClick = {() => props.toggle()}
       />
+      <LikeButton count = {props.count}/>
     </div>
   )
 };
