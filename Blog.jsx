@@ -15,7 +15,6 @@ class Blog extends React.Component {
     })
   };
 
-
   render() {
     const authorName = "daigororin"
     return (
