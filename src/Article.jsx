@@ -10,9 +10,10 @@ const Article = (props) => {
   return (
     <div>
       <h2>{props.title}</h2>
-      <p>No:{props.order}</p>
-      <p>author:{props.author}</p>
-      <p>{publishState}</p>
+      <label htmlFor = "check">isChecked</label>
+      <input type="checkbox" checked = {props.isPublished} 
+      id = "check" onClick = {() => props.toggle()}
+      />
     </div>
   )
 };
